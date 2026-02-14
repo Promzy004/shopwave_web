@@ -16,7 +16,6 @@ interface IFormErrors {
 }
 
 const LoginForm = () => {
-    const [isLogin, setIsLogin] = useState(false);
     const [ formData, setFormData ] = useState<IFormData>({
         email: "",
         password: "",
@@ -200,20 +199,38 @@ const LoginForm = () => {
                     </div>
                 </motion.div>
 
-                {/* Submit Button */}
-                <motion.button
-                    type="submit"
-                    className="w-full bg-black text-white py-4 rounded-lg font-medium hover:bg-gray-900 transition-colors mt-8"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.7 }}
-                >
-                    Create Account
-                </motion.button>
+                <div className="mt-8 flex flex-col gap-1">
+                    {/* Submit Button */}
+                    <motion.button
+                        type="submit"
+                        className="w-full bg-black text-white py-4 rounded-lg font-medium hover:bg-gray-900 transition-colors"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.7 }}
+                    >
+                        Create Account
+                    </motion.button>
 
-                {/* Login Link */}
+                    {/* Forgot password Link */}
+                    <motion.p 
+                        className="text-center text-sm text-gray-600 self-end"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.8 }}
+                    >
+                        <Link 
+                            href="/forgot-password" 
+                            className="text-blue-600 hover:underline font-medium"
+                        >
+                            Forgot password?
+                        </Link>
+                    </motion.p>
+
+                </div>
+
+                {/* Register Link */}
                 <motion.p 
                     className="text-center text-sm text-gray-600 mt-6"
                     initial={{ opacity: 0 }}
@@ -224,7 +241,6 @@ const LoginForm = () => {
                     <Link 
                         href="/register" 
                         className="text-blue-600 hover:underline font-medium"
-                        onClick={() => setIsLogin(true)}
                     >
                         register
                     </Link>
