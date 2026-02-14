@@ -99,7 +99,7 @@ const TestimonialCard = () => {
     };
 
     return (
-        <div className="px-4 sm:px-6 md:px-10 py-12 md:py-20">
+        <div className="px-4 sm:px-6 md:px-10 py-6">
             <div className="max-w-[1200px] mx-auto relative">
                 {/* Testimonials Container */}
                 <div className="flex items-center justify-center relative min-h-[400px]">
