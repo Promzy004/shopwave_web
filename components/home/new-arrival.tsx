@@ -27,14 +27,14 @@ const NewArrival = () => {
     ]
 
     return (
-        <section className="px-10">
+        <section className="px-4 md:px-10">
             <Heading title="New Arrivals" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta excepturi tenetur repellendus officia exercitationem architecto blanditiis voluptates dolore in." />
-            <div className="grid grid-cols-4 gap-8 justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 {Array.from({ length: 5 }).map((_, idx) => (
-                    <div key={idx} className="hover:scale-105 duration-300 transition-all">
+                    <div key={idx} className="hover:scale-105 duration-300 w-full transition-all">
                         <ProductCard
                             title="Title here" 
-                            desc={"Testinggngbngbbg gbngbnbgbg jbgnb"} 
+                            desc={"Testinggngbngbbg gbngbnbgbg jbgnb f bfnbfnbffbbfbfbfbfnbnfbfbnf fjbfnbfnfbnbfnfbbfnbfn fnf nfbfnbfnbfnbfnbfnfbnf fnfbnfbfnbfnbf"} 
                             amount={9.55}
                             status={"Still Available"}
                             image={image1.src}

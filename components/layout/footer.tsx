@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <Image src={woman} alt="woman" height={500} className="absolute hidden lg:inline-block right-0 md:right-[5%] xl:right-[15%]" />
             </div>
-            <div className="w-full flex flex-col items-start sm:items-center gap-6 px-10 py-5 border-t border-[#dedfe1]">
+            <div className="w-full flex flex-col items-start sm:items-center gap-6 px-4 md:px-10 py-5 border-t border-[#dedfe1]">
                 <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center">
                     <h4 className="text-3xl mb-6 sm:mb-0">ShopWave</h4>
                     <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">

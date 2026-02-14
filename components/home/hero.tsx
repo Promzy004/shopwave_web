@@ -9,7 +9,7 @@ import groupHero from "@/assets/images/group-hero.png"
 
 const Hero = () => {
     return (
-        <section className="h-screen mt-20 px-10">
+        <section className="md:h-screen box-border pt-20 px-4 md:px-10 mb-10">
             <div className="grid md:grid-cols-3 gap-5 py-10">
                 <div className="h-full relative hidden md:flex justify-center rounded-xl bg-[#e0e0e0] pt-40 box-border">
                     <Image src={manLeft} alt="" className="w-[90%] bottom-0 absolute" />

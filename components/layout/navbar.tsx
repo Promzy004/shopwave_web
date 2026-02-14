@@ -40,7 +40,7 @@ export default Navbar;
 
 const NavbarDesktop = () => {
     return (
-        <header className="hidden md:flex justify-between items-center px-10 py-5">
+        <header className="hidden md:flex justify-between items-center px-4 md:px-10 py-5">
             <Link href="" className="text-4xl">ShopWave</Link>
 
             <div className="flex gap-5">
@@ -82,7 +82,7 @@ const NavbarMobile = () => {
     }, [isOpen]);
 
     return (
-        <header className="flex md:hidden justify-between items-center px-10 py-5">
+        <header className="flex md:hidden justify-between items-center px-4 md:px-10 py-5">
             <Link href="" className="text-4xl">ShopWave</Link>
             
             <div className="flex gap-6 items-center">
