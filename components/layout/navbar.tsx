@@ -10,10 +10,10 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
     return (
-        <>
+        <div className="fixed w-full bg-white z-10 top-0">
             <NavbarDesktop />
             <NavbarMobile />
-        </>
+        </div>
     );
 }
  
@@ -24,7 +24,7 @@ export default Navbar;
 
 const NavbarDesktop = () => {
     return (
-        <header className="hidden sm:flex justify-between items-center px-10 py-5">
+        <header className="hidden md:flex justify-between items-center px-10 py-5">
             <Link href="" className="text-4xl">ShopWave</Link>
 
             <div className="flex gap-5">
