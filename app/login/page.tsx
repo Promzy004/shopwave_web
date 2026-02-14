@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import registerImage from "@/assets/images/register-image.png";
+import loginImage from "@/assets/images/login-image.png";
 import LoginForm from "./LoginForm";
 
 const Login = () => {
@@ -10,7 +10,7 @@ const Login = () => {
             {/* Left Side - Image */}
             <div className="hidden lg:flex lg:w-1/2 relative bg-gray-100">
                 <Image 
-                    src={registerImage}
+                    src={loginImage}
                     alt="Register"
                     fill
                     className="object-cover"
