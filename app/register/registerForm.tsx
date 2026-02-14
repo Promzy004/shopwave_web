@@ -194,9 +194,9 @@ const RegisterForm = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
                 >
-                    <div className="flex-1 h-[1px] bg-gray-300"></div>
+                    <div className="flex-1 h-px bg-gray-300"></div>
                     <span className="text-gray-500 font-medium text-sm">OR</span>
-                    <div className="flex-1 h-[1px] bg-gray-300"></div>
+                    <div className="flex-1 h-px bg-gray-300"></div>
                 </motion.div>
 
                 {/* Form Fields */}
