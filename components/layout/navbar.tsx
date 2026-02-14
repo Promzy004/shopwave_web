@@ -9,8 +9,24 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
+
+    const [ scrolled, setScrolled ] = useState<boolean>(false)
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0)
+        }
+
+        handleScroll()
+        
+        window.addEventListener("scroll", handleScroll)
+
+        return () => { window.removeEventListener("scroll", handleScroll)}
+    }, [])
+
     return (
-        <div className="fixed w-full bg-white z-10 top-0">
+        <div 
+            className={`fixed w-full bg-white z-10 top-0 transition-shadow duration-300 ${scrolled && "shadow-lg backdrop-blur-sm"}`}
+        >
             <NavbarDesktop />
             <NavbarMobile />
         </div>
