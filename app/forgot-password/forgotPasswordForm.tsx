@@ -14,7 +14,6 @@ interface IFormErrors {
 }
 
 const ForgotPasswordForm = () => {
-    const [isLogin, setIsLogin] = useState(false);
     const [ formData, setFormData ] = useState<IFormData>({
         email: ""
     })
@@ -144,7 +143,6 @@ const ForgotPasswordForm = () => {
                     <Link 
                         href="/login" 
                         className="text-blue-600 hover:underline font-medium"
-                        onClick={() => setIsLogin(true)}
                     >
                         login
                     </Link>

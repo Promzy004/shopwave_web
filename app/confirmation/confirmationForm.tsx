@@ -6,7 +6,6 @@ import { Mail } from "lucide-react";
 import Link from "next/link";
 
 const ConfirmationForm = () => {
-    const [isLogin, setIsLogin] = useState(false);
     const [ code, setCode ] = useState<string>('')
     const [ codeError, setCodeError ] = useState<string>()
 
@@ -126,7 +125,6 @@ const ConfirmationForm = () => {
                     <Link 
                         href="/login" 
                         className="text-blue-600 hover:underline font-medium"
-                        onClick={() => setIsLogin(true)}
                     >
                         login
                     </Link>

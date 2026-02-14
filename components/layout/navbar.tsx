@@ -44,19 +44,19 @@ const NavbarDesktop = () => {
             <Link href="" className="text-4xl">ShopWave</Link>
 
             <div className="flex gap-5">
-                <Link href="">Home</Link>
-                <Link href="">Shop</Link>
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
                 <Link href="">Products</Link>
-                <Link href="">Contact us</Link>
+                <Link href="/contact">Contact us</Link>
             </div>
             <div className="flex gap-5">
                 <Link href="">
                     <Search />
                 </Link>
-                <Link href="">
+                <Link href="/login">
                     <User />
                 </Link>
-                <Link href="">
+                <Link href="/cart">
                     <Store />
                 </Link>
             </div>
@@ -107,11 +107,11 @@ const NavbarMobile = () => {
                             exit={{ x: "50%", opacity: 0 }}
                             transition={{ duration: 0.2, type: "tween" }}
                         >
-                            <Link href="" className="text-xl">Home</Link>
-                            <Link href="" className="text-xl">Shop</Link>
+                            <Link href="/" className="text-xl">Home</Link>
+                            <Link href="/shop" className="text-xl">Shop</Link>
                             <Link href="" className="text-xl">Products</Link>
-                            <Link href="" className="text-xl">Contact us</Link>
-                            <Link href="" className="text-xl">
+                            <Link href="/contact" className="text-xl">Contact us</Link>
+                            <Link href="/cart" className="text-xl">
                                 <Store />
                             </Link>
                         </motion.nav>

@@ -24,7 +24,6 @@ interface IFormErrors {
 }
 
 const RegisterForm = () => {
-    const [isLogin, setIsLogin] = useState(false);
     const [ formData, setFormData ] = useState<IFormData>({
         firstname: "",
         lastname: "",
@@ -303,7 +302,6 @@ const RegisterForm = () => {
                     <Link 
                         href="/login" 
                         className="text-blue-600 hover:underline font-medium"
-                        onClick={() => setIsLogin(true)}
                     >
                         Login
                     </Link>
